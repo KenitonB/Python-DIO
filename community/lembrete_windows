@@ -1,0 +1,13 @@
+import time
+from plyer import notification
+
+def lembrete():
+    notification.notify(
+        title="Verificar Service Center",
+        message="Olhe no SC3 se tem Ticket aberto!",
+        timeout=10
+    )
+
+while True:
+    lembrete()
+    time.sleep(60)
